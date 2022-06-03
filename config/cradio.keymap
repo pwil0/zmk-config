@@ -43,7 +43,7 @@
         
             combo_ralt {
             timeout-ms = <30>;
-            key-positions = <17 16>;
+            key-positions = <17 18>;
             bindings = <&kp RALT>;
 	    slow-release;
         };
