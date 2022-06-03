@@ -62,11 +62,17 @@
 	    slow-release;
         };
         
-        
            combo_rgui {
             timeout-ms = <30>;
             key-positions = <28 29>;
             bindings = <&kp RGUI>;
+	    slow-release;
+        };
+
+           combo_colemak {
+            timeout-ms = <30>;
+            key-positions = <5 25>;
+            bindings = <&tog 4>;
 	    slow-release;
         };
         
@@ -110,6 +116,16 @@
 		&kp F1 &kp F2 &kp F3 &kp F4 &kp F5  						&kp HOME &kp LEFT  &kp DOWN &kp RIGHT &kp END 
 		&bt BT_CLR  &bt BT_NXT &bt BT_PRV &out OUT_USB &out OUT_BLE   			&trans &kp PG_DN  &kp K_VOL_DN  &trans &trans   
 					 &trans &trans  					&trans &trans 
+		>;
+		};	
+        
+		quad_layer {
+		bindings = <
+		&kp Q &kp W &kp F &kp P &kp B 						&kp J &kp L  &kp U    &kp Y   &kp SCLN 
+		&kp A &kp R &kp S &kp T &kp G 			        	        &kp M &kp N &kp E &kp I &kp O
+		&mt LSFT Z &kp X &kp C &kp D &kp V 				        &kp K &kp H &kp CMMA &kp DOT &mt LSFT FSLH
+          				&lt 1 SPC &lt 3 TAB  				&lt 2 BKSP &kp RET 
+				 &trans &trans  					&trans &trans 
 		>;
 		};	
         
