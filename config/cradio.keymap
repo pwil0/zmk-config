@@ -37,6 +37,13 @@
          combo_ctrl2 {
             timeout-ms = <30>;
             key-positions = <22 23>;
+            bindings = <&kp LCTRL>;
+	    slow-release;
+        };
+
+         combo_ctrl3 {
+            timeout-ms = <30>;
+            key-positions = <26 27>;
             bindings = <&kp RCTRL>;
 	    slow-release;
         };
