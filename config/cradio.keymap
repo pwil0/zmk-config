@@ -18,6 +18,7 @@
 
     combos {
         compatible = "zmk,combos";
+	slow-release = true;
         combo_esc {
             timeout-ms = <30>;
             key-positions = <12 13>;
@@ -34,7 +35,6 @@
             timeout-ms = <30>;
             key-positions = <22 23>;
             bindings = <&kp RCTRL>;
-	    slow-release = true;
         };
         
             combo_ralt {
