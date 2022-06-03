@@ -120,7 +120,7 @@
 		tri_layer {
 		bindings = <
 		&kp LALT  &kp K_VOL_DN &kp K_MUTE &kp K_VOL_UP &kp CAPS				&trans &kp PG_DN   &kp UP   &kp PG_UP  &kp DEL
-		&kp F1 &kp F2 &kp F3 &kp F4 &kp LGUI  						&kp HOME &kp LEFT  &kp DOWN &kp RIGHT &kp END 
+		&bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &kp LGUI			&kp HOME &kp LEFT  &kp DOWN &kp RIGHT &kp END 
 		&bt BT_CLR  &bt BT_NXT &bt BT_PRV &out OUT_USB &out OUT_BLE   			&trans &kp PG_DN  &kp K_VOL_DN  &trans &trans   
 					 &trans &trans  					&trans &trans 
 		>;
