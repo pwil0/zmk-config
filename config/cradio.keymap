@@ -132,9 +132,9 @@
 		
 		right_layer {
 		bindings = <
-		&kp GRAVE  &kp LBRC &kp RBRC  &kp DLLR  &kp TILDE    			&kp AMPS  &kp KMLT &kp LPRN &kp RPRN &kp DEL
+		&kp GRAVE  &kp LBKT &kp RBKT  &kp DLLR  &kp TILDE    			&kp AMPS  &kp KMLT &kp LPRN &kp RPRN &kp DEL
 		&kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCT 			&kp CARET &kp AMPS  &kp STAR  &kp MINUS   &kp EQUAL
-		&kp LSFT  &kp QMARK &kp BKSP &kp BKSP   &kp BKSP    			&kp BKSP &kp BKSP &kp UNDER &kp SQT  &mt RSFT BSLH
+		&kp QMARK  &kp DQT &kp BKSP &kp BKSP   &kp BKSP    			&kp BKSP &kp BKSP &kp UNDER &kp SQT  &mt RSFT BSLH
 					  &mo 3 &kp LCTL  				&kp SPC  &mo 2 
 		>;
 		};	
