@@ -126,7 +126,7 @@
 		&kp F1    &kp F2        &kp F3      &kp F4        &kp F5		&kp F6     &kp F7  &kp F8   &kp F9     &kp F10 
 		&kp N1    &kp N2        &kp N3      &kp N4        &kp N5		&kp N6     &kp N7  &kp N8   &kp N9     &kp N0 
 		&kp F11    &kp F12 	&trans      &trans        &trans        	&kp MINUS &kp GRAVE &kp LBKT &kp RBKT  &kp DEL 
-					    &mo 1  &kp LGUI  					&kp RGUI &mo 2 
+					    &mo 1  &mo 5  					&kp RGUI &mo 2 
 		>;
 		};
 		
@@ -141,10 +141,10 @@
 		
 		tri_layer {
 		bindings = <
-		&kp LALT  &kp K_VOL_DN &kp K_MUTE &kp K_VOL_UP &kp CAPS				&trans &kp PG_DN   &kp UP   &kp PG_UP  &kp DEL
-		&bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &kp LGUI			&kp HOME &kp LEFT  &kp DOWN &kp RIGHT &kp END 
-		&bt BT_CLR  &bt BT_NXT &bt BT_PRV &out OUT_USB &out OUT_BLE   			&trans &kp PG_DN  &kp K_VOL_DN  &trans &trans   
-					 &trans &trans  					&trans &trans 
+		&kp LALT  &kp K_VOL_DN &kp K_MUTE &kp K_VOL_UP &kp CAPS			&trans &kp PG_DN   &kp UP   &kp PG_UP  &kp DEL
+		&trans  &trans &trans &trans &kp LALT					&kp HOME &kp LEFT  &kp DOWN &kp RIGHT &kp END 
+		&trans  &trans &trans &trans &kp LGUI   				&trans &kp PG_DN  &kp K_VOL_DN  &trans &trans   
+					 &trans &trans  				&trans &trans 
 		>;
 		};	
         
@@ -154,6 +154,14 @@
 		&kp A &kp R &kp S &kp T &kp G 			        	        &kp M &kp N &kp E &kp I &kp O
 		&mt LSFT Z &kp X &kp C &kp D &kp V 				        &kp K &kp H &kp CMMA &kp DOT &mt LSFT FSLH
           				&lt 1 SPC &lt 3 TAB  				&lt 2 BKSP &kp RET 
+		>;
+		};	
+		bt_layer {
+		bindings = <
+		&bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4        &trans &trans &trans &trans &trans
+		&bt BT_SEL 5 &bt BT_SEL 6 &bt BT_SEL 7 &bt BT_SEL 8 &bt BT_SEL 9        &trans &trans &trans &trans &trans
+		&bt BT_CLR  &bt BT_NXT &bt BT_PRV &out OUT_USB &out OUT_BLE 	       	&trans &trans &trans &trans &trans
+          				&bootloader &trans  				&trans &trans &trans
 		>;
 		};	
         
