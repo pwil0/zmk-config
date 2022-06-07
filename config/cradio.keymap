@@ -104,6 +104,20 @@
             bindings = <&tog 4>;
 	    slow-release;
         };
+
+           combo_home_lalt {
+            timeout-ms = <30>;
+            key-positions = <31 13>;
+            bindings = <&kp LGUI>;
+	    slow-release;
+        };
+
+           combo_home_lgui {
+            timeout-ms = <30>;
+            key-positions = <31 12>;
+            bindings = <&kp LALT>;
+	    slow-release;
+        };
         
 
         
