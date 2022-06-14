@@ -9,10 +9,10 @@ mkdir -p $OUTPUT_DIR
 
 cd $ZMK_DIR
 
-west build -p -b nice_nano_v2 -- -DZMK_CONFIG=$CONFIG_DIR -DSHIELD=skeletyl_left
+west build -p -b nice_nano_v2 -- -DZMK_CONFIG=$CONFIG_DIR -DSHIELD=tmkmini_left
 mv build/zephyr/zmk.uf2 $OUTPUT_DIR/skeletyl-left.uf2
 
-west build -p -b nice_nano_v2 -- -DZMK_CONFIG=$CONFIG_DIR -DSHIELD=skeletyl_right
+west build -p -b nice_nano_v2 -- -DZMK_CONFIG=$CONFIG_DIR -DSHIELD=tmkmini_right
 mv build/zephyr/zmk.uf2 $OUTPUT_DIR/skeletyl-right.uf2
 
 cd -
