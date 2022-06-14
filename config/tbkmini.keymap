@@ -58,68 +58,56 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            bindings = <
-	&kp Q      &kp W        &kp F          &kp P       &kp B          &kp J  &kp L        &kp U        &kp Y       &kp SQT
-	&hm LGUI A &hm LALT R   &hm LCTRL S    &hm LSHFT T &kp G          &kp M  &hm RSHFT N  &hm RCTRL E  &hm LALT I  &hm RGUI O
-	&kp Z      &kp X        &kp C          &kp D       &kp V          &kp K  &kp H        &kp COMMA    &kp DOT     &kp FSLH
-	           &lt MSE ESC  &lt NAV SPACE  &lt MED TAB                       &lt FUN RET  &lt NUM BSPC &lt SYM DEL
-            >;
-        };
-        game_layer {
-            bindings = <
-	&kp Q        &kp W      &kp F       &kp P       &kp B          &kp J &kp L       &kp U       &kp Y      &kp SQT
-	&mt LSHIFT A &kp R      &kp S       &kp T       &kp G          &kp M &kp N       &kp E       &kp I      &kp O
-	&mt LCTRL Z  &kp X      &kp C       &kp D       &kp V          &kp K &kp H       &kp COMMA   &kp DOT    &kp FSLH
-	           &lt NUM ESC  &kp SPACE   &hm LALT TAB        &lt FUN RET  &lt NUM BSPC  &lt SYM DEL
-            >;
-        };
-        num_layer {
-            bindings = <
-	&kp RBKT   &kp N7     &kp N8      &kp N9      &kp LBKT       &kp K_LOCK &trans    &trans    &trans   &reset
-	&kp SEMI   &kp N4     &kp N5      &kp N6      &kp EQUAL      &trans     &kp RSHFT &kp RCTRL &kp LALT &kp RGUI
-	&kp GRAVE  &kp N1     &kp N2      &kp N3      &kp BSLH       &trans     &trans    &trans    &trans   &trans
-	           &kp DOT       &kp N0          &kp MINUS           &trans &trans &trans
-            >;
-        };
-        sym_layer {
-            bindings = <
-	&kp RBRC  &kp AMPS &kp STAR  &kp LPAR  &kp LBRC        &kp K_LOCK &trans  &trans     &trans   &reset
-	&kp COLON &kp DLLR &kp PRCNT &kp CARET &kp PLUS        &trans &kp RSHFT  &kp RCTRL  &kp LALT  &kp RGUI
-	&kp TILDE &kp EXCL &kp AT    &kp HASH  &kp PIPE        &trans &trans  &trans &trans &trans
-	                  &kp LPAR  &kp RPAR   &kp UNDER              &trans &trans &trans
-            >;
-        };
-        fun_layer {
-            bindings = <
-	&kp F12 &kp F7 &kp F8 &kp F9 &kp SYSREQ        &kp K_LOCK &trans  &trans     &trans   &bootloader
-	&kp F11 &kp F4 &kp F5 &kp F6 &kp PRINTSCREEN   &trans &kp RSHFT  &kp RCTRL  &kp LALT  &kp RGUI
-	&kp F10 &kp F1 &kp F2 &kp F3 &kp PAUSE_BREAK   &trans &trans  &trans &trans &tog GAME
-	                  &kp K_APP   &kp SPACE   &kp TAB     &trans &trans &trans
-            >;
-        };
-        nav_layer {
-            bindings = <
-	&reset   &trans   &trans    &trans     &kp K_LOCK   &kp K_UNDO &kp K_CUT &kp K_COPY &kp K_PASTE &kp K_AGAIN
-	&kp LGUI &kp LALT &kp LCTRL &kp LSHFT &trans       &kp LEFT   &kp DOWN  &kp UP     &kp RIGHT   &kp CAPS
-	&trans   &trans   &trans    &trans     &trans       &kp HOME   &kp PG_DN &kp PG_UP  &kp END     &kp INS
-	                  &trans   &trans   &trans                 &kp RET &kp BSPC &kp DEL
-            >;
-        };
-        mse_layer {
-            bindings = <
-	&reset   &trans   &trans    &trans     &kp K_LOCK   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
-	&kp LGUI &kp LALT &kp LCTRL &kp LSHFT &trans       &trans &trans &trans &trans &trans
-	&trans   &trans   &trans    &trans     &trans       &trans &trans &trans &trans &bt BT_CLR
-	                  &trans   &trans   &trans                 &trans &trans &trans
-            >;
-        };
-        med_layer {
-            bindings = <
-	&bootloader   &trans   &trans    &trans     &kp K_LOCK   &trans &trans     &trans       &trans       &trans
-	&kp LGUI &kp LALT &kp LCTRL &kp LSHFT &trans       &trans &kp K_PREV &kp K_VOL_DN &kp K_VOL_UP &kp K_NEXT
-	&trans   &trans   &trans    &trans     &trans       &trans &trans     &trans       &trans       &trans
-	                  &trans   &trans   &trans                 &kp K_STOP2 &kp K_PP &kp K_MUTE
-            >;
-        };
+		bindings = <
+		&kp Q &kp W &kp E &kp R &kp T 						&kp Y &kp U  &kp I    &kp O   &kp P
+		&kp A &kp S &kp D &kp F &kp G 			        	        &kp H &kp J &kp K &kp L &kp SCLN
+		&mt LSFT FSLH &kp Z &kp X &kp C &kp V 				        &kp B &kp N &kp M  &kp CMMA &mt LSFT DOT
+					&lt 1 SPC &lt 3 TAB   	&trans &trans		&lt 2 BKSP &kp RET
+		>;
+	};
+
+	left_layer {
+		bindings = <
+		&kp F1    &kp F2        &kp F3      &kp F4        &kp F5		&kp F6     &kp F7  &kp F8   &kp F9     &kp F10
+		&kp N1    &kp N2        &kp N3      &kp N4        &kp N5		&kp N6     &kp N7  &kp N8   &kp N9     &kp N0
+		&kp F11    &kp F12 	&trans      &trans        &trans        	&kp MINUS &kp GRAVE &kp LBKT &kp RBKT  &kp DEL
+					    &mo 1  &mo 5  		&trans &trans			&kp RGUI &mo 2
+		>;
+	};
+
+	right_layer {
+		bindings = <
+		&kp GRAVE  &kp LBKT &kp RBKT  &kp DLLR  &kp TILDE    			&kp AMPS  &kp KMLT &kp LPRN &kp RPRN &kp DEL
+		&kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCT 			&kp CARET &kp AMPS  &kp STAR  &kp MINUS   &kp EQUAL
+		&kp QMARK  &kp DQT &kp BKSP &kp BKSP   &kp BKSP    			&kp BKSP &kp BKSP &kp UNDER &kp SQT  &mt RSFT BSLH
+					  &mo 3 &kp LCTL  		&trans &trans		&kp SPC  &mo 2
+		>;
+	};
+
+	tri_layer {
+		bindings = <
+		&kp LALT  &kp K_VOL_DN &kp K_MUTE &kp K_VOL_UP &kp CAPS			&trans &kp PG_DN   &kp UP   &kp PG_UP  &kp DEL
+		&trans  &trans &trans &trans &kp LALT					&kp HOME &kp LEFT  &kp DOWN &kp RIGHT &kp END
+		&trans  &trans &trans &trans &kp LGUI   				&trans &kp PG_DN  &kp K_VOL_DN  &trans &trans
+					 &trans &trans  		&trans &trans		&trans &trans
+		>;
+	};
+
+	quad_layer {
+		bindings = <
+		&kp Q &kp W &kp F &kp P &kp B 						&kp J &kp L  &kp U    &kp Y   &kp SCLN
+		&kp A &kp R &kp S &kp T &kp G 			        	        &kp M &kp N &kp E &kp I &kp O
+		&mt LSFT Z &kp X &kp C &kp D &kp V 				        &kp K &kp H &kp CMMA &kp DOT &mt LSFT FSLH
+					&lt 1 SPC &lt 3 TAB  		&trans &trans		&lt 2 BKSP &kp RET
+		>;
+	};
+	bt_layer {
+		bindings = <
+		&bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4        &trans &trans &trans &trans &trans
+		&bt BT_SEL 5 &bt BT_SEL 6 &bt BT_SEL 7 &bt BT_SEL 8 &bt BT_SEL 9        &trans &trans &trans &trans &trans
+		&bt BT_CLR  &bt BT_NXT &bt BT_PRV &out OUT_USB &out OUT_BLE 	       	&trans &trans &trans &trans &trans
+					&bootloader &trans  		&trans &trans		&bootloader &bootloader
+		>;
+	};
     };
 };
