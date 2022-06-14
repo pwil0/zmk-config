@@ -84,49 +84,49 @@ combos {
 
            combo_lhome_alt {
             timeout-ms = <30>;
-            key-positions = <31 13>;
+            key-positions = <32 13>;
             bindings = <&kp LALT>;
             slow-release;
         };
 
            combo_lhome_altgui {
             timeout-ms = <30>;
-            key-positions = <31 12 13>;
+            key-positions = <32 12 13>;
             bindings = <&kp LA(LGUI)>;
             slow-release;
         };
 
            combo_lhome_altctl {
             timeout-ms = <30>;
-            key-positions = <31 11 13>;
+            key-positions = <32 11 13>;
             bindings = <&kp LA(LCTL)>;
             slow-release;
         };
 
            combo_lhome_altguictl {
             timeout-ms = <30>;
-            key-positions = <31 11 12 13>;
+            key-positions = <32 11 12 13>;
             bindings = <&kp LA(LG(LCTRL))>;
             slow-release;
         };
 
            combo_lhome_gui {
             timeout-ms = <30>;
-            key-positions = <31 12>;
+            key-positions = <32 12>;
             bindings = <&kp LGUI>;
             slow-release;
         };
 
            combo_lhome_guictl {
             timeout-ms = <30>;
-            key-positions = <31 11 12>;
+            key-positions = <32 11 12>;
             bindings = <&kp LG(LCTRL)>;
             slow-release;
         };
 
            combo_lhome_ctl {
             timeout-ms = <30>;
-            key-positions = <31 11>;
+            key-positions = <32 11>;
             bindings = <&kp LCTRL>;
             slow-release;
         };
@@ -191,7 +191,7 @@ combos {
 		&kp Q &kp W &kp E &kp R &kp T 						&kp Y &kp U  &kp I    &kp O   &kp P
 		&kp A &kp S &kp D &kp F &kp G 			        	        &kp H &kp J &kp K &kp L &kp SCLN
 		&mt LSFT FSLH &kp Z &kp X &kp C &kp V 				        &kp B &kp N &kp M  &kp CMMA &mt LSFT DOT
-					&lt 1 SPC &lt 3 TAB   	&trans &trans		&lt 2 BKSP &kp RET
+					&trans &lt 1 SPC &lt 3 TAB   			&lt 2 BKSP &kp RET &trans
 		>;
 	};
 
@@ -200,7 +200,7 @@ combos {
 		&kp F1    &kp F2        &kp F3      &kp F4        &kp F5		&kp F6     &kp F7  &kp F8   &kp F9     &kp F10
 		&kp N1    &kp N2        &kp N3      &kp N4        &kp N5		&kp N6     &kp N7  &kp N8   &kp N9     &kp N0
 		&kp F11    &kp F12 	&trans      &trans        &trans        	&kp MINUS &kp GRAVE &kp LBKT &kp RBKT  &kp DEL
-					    &mo 1  &mo 5  		&trans &trans			&kp RGUI &mo 2
+					   &trans  &mo 1  &mo 5  					&kp RGUI &mo 2 &trans
 		>;
 	};
 
@@ -209,7 +209,7 @@ combos {
 		&kp GRAVE  &kp LBKT &kp RBKT  &kp DLLR  &kp TILDE    			&kp AMPS  &kp KMLT &kp LPRN &kp RPRN &kp DEL
 		&kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCT 			&kp CARET &kp AMPS  &kp STAR  &kp MINUS   &kp EQUAL
 		&kp QMARK  &kp DQT &kp BKSP &kp BKSP   &kp BKSP    			&kp BKSP &kp BKSP &kp UNDER &kp SQT  &mt RSFT BSLH
-					  &mo 3 &kp LCTL  		&trans &trans		&kp SPC  &mo 2
+					 &trans  &mo 3 &kp LCTL  				&kp SPC  &mo 2 &trans
 		>;
 	};
 
@@ -218,7 +218,7 @@ combos {
 		&kp LALT  &kp K_VOL_DN &kp K_MUTE &kp K_VOL_UP &kp CAPS			&trans &kp PG_DN   &kp UP   &kp PG_UP  &kp DEL
 		&trans  &trans &trans &trans &kp LALT					&kp HOME &kp LEFT  &kp DOWN &kp RIGHT &kp END
 		&trans  &trans &trans &trans &kp LGUI   				&trans &kp PG_DN  &kp K_VOL_DN  &trans &trans
-					 &trans &trans  		&trans &trans		&trans &trans
+					 &trans &trans &trans  				&trans &trans &trans
 		>;
 	};
 
@@ -227,7 +227,7 @@ combos {
 		&kp Q &kp W &kp F &kp P &kp B 						&kp J &kp L  &kp U    &kp Y   &kp SCLN
 		&kp A &kp R &kp S &kp T &kp G 			        	        &kp M &kp N &kp E &kp I &kp O
 		&mt LSFT Z &kp X &kp C &kp D &kp V 				        &kp K &kp H &kp CMMA &kp DOT &mt LSFT FSLH
-					&lt 1 SPC &lt 3 TAB  		&trans &trans		&lt 2 BKSP &kp RET
+					&trans &lt 1 SPC &lt 3 TAB  				&lt 2 BKSP &kp RET &trans
 		>;
 	};
 	bt_layer {
@@ -235,7 +235,7 @@ combos {
 		&bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4        &trans &trans &trans &trans &trans
 		&bt BT_SEL 5 &bt BT_SEL 6 &bt BT_SEL 7 &bt BT_SEL 8 &bt BT_SEL 9        &trans &trans &trans &trans &trans
 		&bt BT_CLR  &bt BT_NXT &bt BT_PRV &out OUT_USB &out OUT_BLE 	       	&trans &trans &trans &trans &trans
-					&bootloader &trans  		&trans &trans		&bootloader &bootloader
+					&bootloader &trans  		&bootloader &bootloader		&bootloader &bootloader
 		>;
 	};
     };
