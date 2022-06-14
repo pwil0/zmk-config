@@ -28,69 +28,6 @@
 	    slow-release;
         };
         
-         combo_ctrl1 {
-            timeout-ms = <30>;
-            key-positions = <10 11>;
-            bindings = <&kp LCTRL>;
-	    slow-release;
-        };
-
-         combo_ctrl2 {
-            timeout-ms = <30>;
-            key-positions = <22 23>;
-            bindings = <&kp LCTRL>;
-	    slow-release;
-        };
-
-         combo_ctrl3 {
-            timeout-ms = <30>;
-            key-positions = <26 27>;
-            bindings = <&kp RCTRL>;
-	    slow-release;
-        };
-        
-            combo_ralt {
-            timeout-ms = <30>;
-            key-positions = <17 18>;
-            bindings = <&kp RALT>;
-	    slow-release;
-        };
-        
-                    combo_lalt {
-            timeout-ms = <30>;
-            key-positions = <11 12>;
-            bindings = <&kp LALT>;
-	    slow-release;
-        };
-        
-                           combo_lgui {
-            timeout-ms = <30>;
-            key-positions = <20 21>;
-            bindings = <&kp LGUI>;
-	    slow-release;
-        };
-        
-           combo_altgui {
-            timeout-ms = <30>;
-            key-positions = <11 13>;
-            bindings = <&kp LALT(LGUI)>;
-	    slow-release;
-        };
-        
-           combo_altgui1 {
-            timeout-ms = <30>;
-            key-positions = <16 18>;
-            bindings = <&kp RALT(RGUI)>;
-	    slow-release;
-        };
-        
-           combo_rgui {
-            timeout-ms = <30>;
-            key-positions = <28 29>;
-            bindings = <&kp RGUI>;
-	    slow-release;
-        };
-        
            combo_ent {
             timeout-ms = <30>;
             key-positions = <13 24>;
@@ -105,20 +42,110 @@
 	    slow-release;
         };
 
-           combo_home_lalt {
+			// home row combos
+
+		// left side
+
+           combo_lhome_alt {
             timeout-ms = <30>;
             key-positions = <31 13>;
-            bindings = <&kp LGUI>;
-	    slow-release;
-        };
-
-           combo_home_lgui {
-            timeout-ms = <30>;
-            key-positions = <31 12>;
             bindings = <&kp LALT>;
 	    slow-release;
         };
+
+           combo_lhome_altgui {
+            timeout-ms = <30>;
+            key-positions = <31 12 13>;
+            bindings = <&kp LA(LGUI)>;
+	    slow-release;
+        };
+
+           combo_lhome_altctl {
+            timeout-ms = <30>;
+            key-positions = <31 11 13>;
+            bindings = <&kp LA(LCTL)>;
+	    slow-release;
+        };
+
+           combo_lhome_altguictl {
+            timeout-ms = <30>;
+            key-positions = <31 11 12 13>;
+            bindings = <&kp LA(LG(LCTRL))>;
+	    slow-release;
+        };
         
+           combo_lhome_gui {
+            timeout-ms = <30>;
+            key-positions = <31 12>;
+            bindings = <&kp LGUI>;
+	    slow-release;
+        };
+        
+           combo_lhome_guictl {
+            timeout-ms = <30>;
+            key-positions = <31 11 12>;
+            bindings = <&kp LG(LCTRL)>;
+	    slow-release;
+        };
+        
+           combo_lhome_ctl {
+            timeout-ms = <30>;
+            key-positions = <31 11>;
+            bindings = <&kp LCTRL>;
+	    slow-release;
+        };
+
+		// right side
+
+           combo_rhome_alt {
+            timeout-ms = <30>;
+            key-positions = <32 16>;
+            bindings = <&kp RALT>;
+	    slow-release;
+        };
+
+           combo_rhome_altgui {
+            timeout-ms = <30>;
+            key-positions = <32 17 16>;
+            bindings = <&kp RA(RGUI)>;
+	    slow-release;
+        };
+
+           combo_rhome_altctl {
+            timeout-ms = <30>;
+            key-positions = <32 18 16>;
+            bindings = <&kp RA(RCTL)>;
+	    slow-release;
+        };
+
+           combo_rhome_altguictl {
+            timeout-ms = <30>;
+            key-positions = <32 18 17 16>;
+            bindings = <&kp RA(RG(RCTRL))>;
+	    slow-release;
+        };
+        
+           combo_rhome_gui {
+            timeout-ms = <30>;
+            key-positions = <32 17>;
+            bindings = <&kp RGUI>;
+	    slow-release;
+        };
+        
+           combo_rhome_guictl {
+            timeout-ms = <30>;
+            key-positions = <32 18 17>;
+            bindings = <&kp RG(RCTRL)>;
+	    slow-release;
+        };
+        
+           combo_rhome_ctl {
+            timeout-ms = <30>;
+            key-positions = <32 18>;
+            bindings = <&kp RCTRL>;
+	    slow-release;
+        };
+
 
         
     };
