@@ -84,49 +84,49 @@ combos {
 
            combo_lhome_alt {
             timeout-ms = <30>;
-            key-positions = <32 13>;
+            key-positions = <31 13>;
             bindings = <&kp LALT>;
             slow-release;
         };
 
            combo_lhome_altgui {
             timeout-ms = <30>;
-            key-positions = <32 12 13>;
+            key-positions = <31 12 13>;
             bindings = <&kp LA(LGUI)>;
             slow-release;
         };
 
            combo_lhome_altctl {
             timeout-ms = <30>;
-            key-positions = <32 11 13>;
+            key-positions = <31 11 13>;
             bindings = <&kp LA(LCTL)>;
             slow-release;
         };
 
            combo_lhome_altguictl {
             timeout-ms = <30>;
-            key-positions = <32 11 12 13>;
+            key-positions = <31 11 12 13>;
             bindings = <&kp LA(LG(LCTRL))>;
             slow-release;
         };
 
            combo_lhome_gui {
             timeout-ms = <30>;
-            key-positions = <32 12>;
+            key-positions = <31 12>;
             bindings = <&kp LGUI>;
             slow-release;
         };
 
            combo_lhome_guictl {
             timeout-ms = <30>;
-            key-positions = <32 11 12>;
+            key-positions = <31 11 12>;
             bindings = <&kp LG(LCTRL)>;
             slow-release;
         };
 
            combo_lhome_ctl {
             timeout-ms = <30>;
-            key-positions = <32 11>;
+            key-positions = <31 11>;
             bindings = <&kp LCTRL>;
             slow-release;
         };
@@ -135,49 +135,49 @@ combos {
 
            combo_rhome_alt {
             timeout-ms = <30>;
-            key-positions = <33 16>;
+            key-positions = <34 16>;
             bindings = <&kp RALT>;
             slow-release;
         };
 
            combo_rhome_altgui {
             timeout-ms = <30>;
-            key-positions = <33 17 16>;
+            key-positions = <34 17 16>;
             bindings = <&kp RA(RGUI)>;
             slow-release;
         };
 
            combo_rhome_altctl {
             timeout-ms = <30>;
-            key-positions = <33 18 16>;
+            key-positions = <34 18 16>;
             bindings = <&kp RA(RCTL)>;
             slow-release;
         };
 
            combo_rhome_altguictl {
             timeout-ms = <30>;
-            key-positions = <33 18 17 16>;
+            key-positions = <34 18 17 16>;
             bindings = <&kp RA(RG(RCTRL))>;
             slow-release;
         };
 
            combo_rhome_gui {
             timeout-ms = <30>;
-            key-positions = <33 17>;
+            key-positions = <34 17>;
             bindings = <&kp RGUI>;
             slow-release;
         };
 
            combo_rhome_guictl {
             timeout-ms = <30>;
-            key-positions = <33 18 17>;
+            key-positions = <34 18 17>;
             bindings = <&kp RG(RCTRL)>;
             slow-release;
         };
 
            combo_rhome_ctl {
             timeout-ms = <30>;
-            key-positions = <33 18>;
+            key-positions = <34 18>;
             bindings = <&kp RCTRL>;
             slow-release;
         };
@@ -191,7 +191,7 @@ combos {
 		&kp Q &kp W &kp E &kp R &kp T 						&kp Y &kp U  &kp I    &kp O   &kp P
 		&kp A &kp S &kp D &kp F &kp G 			        	        &kp H &kp J &kp K &kp L &kp SCLN
 		&mt LSFT FSLH &kp Z &kp X &kp C &kp V 				        &kp B &kp N &kp M  &kp CMMA &mt LSFT DOT
-					&trans &lt 1 SPC &lt 3 TAB   			&lt 2 BKSP &kp RET &trans
+					&lt 1 SPC &lt 3 TAB  &trans &trans 			&lt 2 BKSP &kp RET 
 		>;
 	};
 
@@ -200,7 +200,7 @@ combos {
 		&kp F1    &kp F2        &kp F3      &kp F4        &kp F5		&kp F6     &kp F7  &kp F8   &kp F9     &kp F10
 		&kp N1    &kp N2        &kp N3      &kp N4        &kp N5		&kp N6     &kp N7  &kp N8   &kp N9     &kp N0
 		&kp F11    &kp F12 	&trans      &trans        &trans        	&kp MINUS &kp GRAVE &kp LBKT &kp RBKT  &kp DEL
-					   &trans  &mo 1  &mo 5  					&kp RGUI &mo 2 &trans
+					   &mo 1  &mo 5  &trans &trans					&kp RGUI &mo 2 
 		>;
 	};
 
@@ -209,7 +209,7 @@ combos {
 		&kp GRAVE  &kp LBKT &kp RBKT  &kp DLLR  &kp TILDE    			&kp AMPS  &kp KMLT &kp LPRN &kp RPRN &kp DEL
 		&kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCT 			&kp CARET &kp AMPS  &kp STAR  &kp MINUS   &kp EQUAL
 		&kp QMARK  &kp DQT &kp BKSP &kp BKSP   &kp BKSP    			&kp BKSP &kp BKSP &kp UNDER &kp SQT  &mt RSFT BSLH
-					 &trans  &mo 3 &kp LCTL  				&kp SPC  &mo 2 &trans
+					&mo 3 &kp LCTL &trans &trans 				&kp SPC  &mo 2 
 		>;
 	};
 
@@ -227,7 +227,7 @@ combos {
 		&kp Q &kp W &kp F &kp P &kp B 						&kp J &kp L  &kp U    &kp Y   &kp SCLN
 		&kp A &kp R &kp S &kp T &kp G 			        	        &kp M &kp N &kp E &kp I &kp O
 		&mt LSFT Z &kp X &kp C &kp D &kp V 				        &kp K &kp H &kp CMMA &kp DOT &mt LSFT FSLH
-					&trans &lt 1 SPC &lt 3 TAB  				&lt 2 BKSP &kp RET &trans
+					&lt 1 SPC &lt 3 TAB  				&lt 2 BKSP &kp RET 
 		>;
 	};
 	bt_layer {
