@@ -71,6 +71,20 @@ combos {
             slow-release;
         };
 
+	   combo_bksp {
+            timeout-ms = <30>;
+            key-positions = <10 20>;
+            bindings = <&kp BKSP>;
+            slow-release;
+        };
+
+           combo_lalt {
+            timeout-ms = <30>;
+            key-positions = <1 12>;
+            bindings = <&kp LALT>;
+            slow-release;
+        };
+
            combo_colemak {
             timeout-ms = <30>;
             key-positions = <5 25>;
