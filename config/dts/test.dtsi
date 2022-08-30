@@ -1,0 +1,41 @@
+/ {
+    macros {
+        accessor_macro: accessor_macro {
+            label = "ZM_accessor_macro";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+        wait-ms = <1>;
+        tap-ms = <1>;
+            bindings
+                = <&macro_press &kp LSHFT>
+                , <&macro_tap &kp A>
+                , <&macro_release &kp LSHFT>
+        , <&macro_tap &kp C &kp C &kp E &kp S &kp S &kp O &kp R>
+                ;
+        };
+        ZMK_MACRO(config_macro,
+        wait-ms = <1>;
+        tap-ms = <1>;
+        bindings = <&kp C &kp O &kp N &kp F &kp I &kp G &kp SPC>;
+        )
+        ZMK_MACRO(the_macro,
+        wait-ms = <1>;
+        tap-ms = <1>;
+        bindings = <&kp T &kp H &kp E &kp SPC>;
+        )
+        ZMK_MACRO(dataloader_macro,
+        wait-ms = <1>;
+        tap-ms = <1>;
+        bindings
+            = <&macro_press &kp LSHFT>
+            , <&macro_tap &kp D>
+            , <&macro_release &kp LSHFT>
+            , <&macro_tap &kp A &kp T &kp A>
+            , <&macro_press &kp LSHFT>
+            , <&macro_tap &kp L>
+            , <&macro_release &kp LSHFT>
+            , <&macro_tap &kp O &kp A &kp D &kp E &kp R>
+            ;
+        )
+    };
+};
