@@ -17,8 +17,16 @@
    // tapping_term_ms = <200>;
 };
 
+&lt {
+    flavor = "balanced";
+};
+
 &caps_word {
     continue-list = <UNDERSCORE MINUS BACKSPACE DELETE>;
+};
+
+&sk {
+    quick-release;
 };
 
 / { 
@@ -30,6 +38,7 @@
 	    key-positions = <20 31>;
 	    bindings = <&sk LSHIFT>;
 	};
+	/*
 	combo_dataloader {
 	    timeout-ms = <80>;
 	    key-positions = <10 12 18 3>;
@@ -50,12 +59,12 @@
 	    key-positions = <10 11 23>;
 	    bindings = <&accessor_macro>;
 	};
+	*/
 
         combo_capsword {
             timeout-ms = <50>;
             key-positions = <4 31>;
             bindings = <&caps_word>;
-	    slow-release;
 	};
  
         combo_esc {
@@ -214,9 +223,9 @@
 
        		left_layer {
 		bindings = <
-		&kp F1    &kp F2        &kp F3      &kp F4        &kp F5		&kp F6     &kp F7  &kp F8   &kp F9     &kp F10 
-		&kp N1    &kp N2        &kp N3      &kp N4        &kp N5		&kp N6     &kp N7  &kp N8   &kp N9     &kp N0 
-		&kp F11    &kp F12 	&trans      &trans        &trans        	&kp MINUS &kp GRAVE &kp LBKT &kp RBKT  &kp DEL 
+		&kp F1    &kp F2        &kp F3      &kp F4        &kp F5		&kp F6     &kp F7  &kp F8   &kp F9   &kp F10 
+		&kp N1    &kp N2        &kp N3      &kp N4        &kp N5		&kp N6     &kp N7  &kp N8   &kp N9   &kp N0 
+		&kp F11    &kp F12 	&trans      &trans        &trans        	&kp MINUS  &trans  &trans   &trans   &trans
 					    &mo 1  &mo 5  					&kp RGUI &mo 2 
 		>;
 		};
