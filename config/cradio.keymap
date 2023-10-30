@@ -206,6 +206,21 @@
 	    slow-release;
         };
 
+
+           combo_ctl_w {
+            timeout-ms = <30>;
+            key-positions = <31 10>;
+            bindings = <&kp LC(W)>;
+	    slow-release;
+        };
+
+           combo_ctl_s {
+            timeout-ms = <30>;
+            key-positions = <30 10>;
+            bindings = <&kp LC(S)>;
+	    slow-release;
+        };
+
         
     };
 
