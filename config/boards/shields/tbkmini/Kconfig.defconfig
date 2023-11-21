@@ -1,7 +1,7 @@
 if SHIELD_TBKMINI_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "tbkmini Left"
+    default "ZMK Skele34"
 
 config ZMK_SPLIT_BLE_ROLE_CENTRAL
     default y
@@ -11,7 +11,7 @@ endif
 if SHIELD_TBKMINI_RIGHT
 
 config ZMK_KEYBOARD_NAME
-    default "tbkmini Right"
+    default "ZMK Skele34"
 
 endif
 
