@@ -242,6 +242,27 @@
 		   bindings = <&kp LC(S)>;
 		   slow-release;
 	   };
+
+	   combo_mb1_r {
+		   timeout-ms = <30>;
+		   key-positions = <28 29>;
+		   bindings = <&mkp LCLK>;
+		   slow-release;
+	   };
+
+	   combo_mb2_r {
+		   timeout-ms = <30>;
+		   key-positions = <28 19>;
+		   bindings = <&mkp RCLK>;
+		   slow-release;
+	   };
+
+	   combo_mb3_r {
+		   timeout-ms = <30>;
+		   key-positions = <19 29>;
+		   bindings = <&mkp MCLK>;
+		   slow-release;
+	   };
 };
 
   keymap {
