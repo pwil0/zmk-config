@@ -293,7 +293,7 @@
 		&kp GRAVE  &kp LBKT &kp RBKT  &kp DLLR  &kp TILDE    			&kp AMPS  &kp KMLT &kp LPRN &kp RPRN &kp DEL
 		&kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCT 			&kp CARET &kp AMPS  &kp STAR  &kp MINUS   &kp EQUAL
 		&kp QMARK  &kp DQT &kp BKSP &kp BKSP   &kp BKSP    			&kp BKSP &kp BKSP &kp UNDER &kp SQT  &mt RSFT BSLH
-					&trans &mo 3 &kp LCTL  				&kp SPC  &mo 2 
+					&trans &trans &trans  				&kp SPC  &mo 2 
 		>;
 	};
 
@@ -328,7 +328,7 @@
 		&trans &mkp MB4 &trans &mkp MB5 &trans        &trans &trans &trans &trans &trans
 		&mkp LCLK &mkp LCLK &mkp MCLK &mkp RCLK &mkp RCLK        &trans &trans &trans &trans &trans
 		&trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans
-					&trans &bootloader &trans  				&bootloader &bootloader
+					&trans &trans &trans  				&trans &trans
 		>;
 	};
     };
