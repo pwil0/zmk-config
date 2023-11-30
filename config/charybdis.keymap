@@ -11,9 +11,9 @@
 };
 
 &lt {
-  tapping-term-ms = <300>;
-  quick_tap_ms = <200>;
-  flavor = "balanced";
+  tapping-term-ms = <150>;
+  quick_tap_ms = <100>;
+  flavor = "hold-preferred";
 };
 
 / {
@@ -24,28 +24,28 @@
   combos {
 	  compatible = "zmk,combos";
 	  combo_esc {
-		  timeout-ms = <30>;
+		  timeout-ms = <50>;
 		  key-positions = <12 13>;
 		  bindings = <&kp ESC>;
 		  slow-release;
 	  };
 
 	  combo_ent {
-		  timeout-ms = <30>;
+		  timeout-ms = <50>;
 		  key-positions = <13 24>;
 		  bindings = <&kp RET>;
 		  slow-release;
 	  };
 
 	  combo_bksp {
-		  timeout-ms = <30>;
+		  timeout-ms = <50>;
 		  key-positions = <10 20>;
 		  bindings = <&kp BKSP>;
 		  slow-release;
 	  };
 
 	  combo_colemak {
-		  timeout-ms = <30>;
+		  timeout-ms = <50>;
 		  key-positions = <5 25>;
 		  bindings = <&tog 4>;
 		  slow-release;
@@ -56,49 +56,49 @@
 	  // left side
 
 	  combo_lhome_alt {
-		  timeout-ms = <30>;
+		  timeout-ms = <50>;
 		  key-positions = <32 13>;
 		  bindings = <&kp LALT>;
 		  slow-release;
 	  };
 
 	  combo_lhome_altgui {
-		  timeout-ms = <30>;
+		  timeout-ms = <50>;
 		  key-positions = <32 12 13>;
 		  bindings = <&kp LA(LGUI)>;
 		  slow-release;
 	  };
 
 	  combo_lhome_altctl {
-		  timeout-ms = <30>;
+		  timeout-ms = <50>;
 		  key-positions = <32 11 13>;
 		  bindings = <&kp LA(LCTL)>;
 		  slow-release;
 	  };
 
 	  combo_lhome_altguictl {
-		  timeout-ms = <30>;
+		  timeout-ms = <50>;
 		  key-positions = <32 11 12 13>;
 		  bindings = <&kp LA(LG(LCTRL))>;
 		  slow-release;
 	  };
 
 	  combo_lhome_gui {
-		  timeout-ms = <30>;
+		  timeout-ms = <50>;
 		  key-positions = <32 12>;
 		  bindings = <&kp LGUI>;
 		  slow-release;
 	  };
 
 	  combo_lhome_guictl {
-		  timeout-ms = <30>;
+		  timeout-ms = <50>;
 		  key-positions = <32 11 12>;
 		  bindings = <&kp LG(LCTRL)>;
 		  slow-release;
 	  };
 
 	  combo_lhome_ctl {
-		  timeout-ms = <30>;
+		  timeout-ms = <50>;
 		  key-positions = <32 11>;
 		  bindings = <&kp LCTRL>;
 		  slow-release;
@@ -107,122 +107,122 @@
 	  // right side
 
 	  combo_rhome_alt {
-		  timeout-ms = <30>;
+		  timeout-ms = <50>;
 		  key-positions = <33 16>;
 		  bindings = <&kp RALT>;
 		  slow-release;
 	  };
 
 	  combo_rhome_altgui {
-		  timeout-ms = <30>;
+		  timeout-ms = <50>;
 		  key-positions = <33 17 16>;
 		  bindings = <&kp RA(RGUI)>;
 		  slow-release;
 	  };
 
 	  combo_rhome_altctl {
-		  timeout-ms = <30>;
+		  timeout-ms = <50>;
 		  key-positions = <33 18 16>;
 		  bindings = <&kp RA(RCTL)>;
 		  slow-release;
 	  };
 
 	  combo_rhome_altguictl {
-		  timeout-ms = <30>;
+		  timeout-ms = <50>;
 		  key-positions = <33 18 17 16>;
 		  bindings = <&kp RA(RG(RCTRL))>;
 		  slow-release;
 	  };
 
 	  combo_rhome_gui {
-		  timeout-ms = <30>;
+		  timeout-ms = <50>;
 		  key-positions = <33 17>;
 		  bindings = <&kp RGUI>;
 		  slow-release;
 	  };
 
 	  combo_rhome_guictl {
-		  timeout-ms = <30>;
+		  timeout-ms = <50>;
 		  key-positions = <33 18 17>;
 		  bindings = <&kp RG(RCTRL)>;
 		  slow-release;
 	  };
 
 	  combo_rhome_ctl {
-		  timeout-ms = <30>;
+		  timeout-ms = <50>;
 		  key-positions = <33 18>;
 		  bindings = <&kp RCTRL>;
 		  slow-release;
 	  };
 
 	  combo_lalt {
-		   timeout-ms = <30>;
+		   timeout-ms = <50>;
 		   key-positions = <1 12>;
 		   bindings = <&kp LALT>;
 		   slow-release;
 	   };
 	   combo_lgui {
-		   timeout-ms = <30>;
+		   timeout-ms = <50>;
 		   key-positions = <1 13>;
 		   bindings = <&kp LGUI>;
 		   slow-release;
 	   };
 	   combo_lctl {
-		   timeout-ms = <30>;
+		   timeout-ms = <50>;
 		   key-positions = <2 13>;
 		   bindings = <&kp LCTL>;
 		   slow-release;
 	   };
 	   combo_ralt {
-		   timeout-ms = <30>;
+		   timeout-ms = <50>;
 		   key-positions = <8 17>;
 		   bindings = <&kp RALT>;
 		   slow-release;
 	   };
 	   combo_rgui {
-		   timeout-ms = <30>;
+		   timeout-ms = <50>;
 		   key-positions = <8 16>;
 		   bindings = <&kp RGUI>;
 		   slow-release;
 	   };
 	   combo_rctl {
-		   timeout-ms = <30>;
+		   timeout-ms = <50>;
 		   key-positions = <7 16>;
 		   bindings = <&kp RCTL>;
 		   slow-release;
 	   };
 	   combo_laltgui {
-		   timeout-ms = <30>;
+		   timeout-ms = <50>;
 		   key-positions = <11 2 3>;
 		   bindings = <&kp LA(LGUI)>;
 		   slow-release;
 	   };
 	   combo_laltctl {
-		   timeout-ms = <30>;
+		   timeout-ms = <50>;
 		   key-positions = <1 12 3>;
 		   bindings = <&kp LA(LCTL)>;
 		   slow-release;
 	   };
 	   combo_lguictl {
-		   timeout-ms = <30>;
+		   timeout-ms = <50>;
 		   key-positions = <1 2 13>;
 		   bindings = <&kp LG(LCTL)>;
 		   slow-release;
 	   };
 	   combo_raltgui {
-		   timeout-ms = <30>;
+		   timeout-ms = <50>;
 		   key-positions = <6 7 18>;
 		   bindings = <&kp RA(RGUI)>;
 		   slow-release;
 	   };
 	   combo_raltctl {
-		   timeout-ms = <30>;
+		   timeout-ms = <50>;
 		   key-positions = <6 17 8>;
 		   bindings = <&kp RA(RCTL)>;
 		   slow-release;
 	   };
 	   combo_rguictl {
-		   timeout-ms = <30>;
+		   timeout-ms = <50>;
 		   key-positions = <16 7 8>;
 		   bindings = <&kp RG(RCTL)>;
 		   slow-release;
@@ -230,35 +230,35 @@
 
 
 	   combo_ctl_w {
-		   timeout-ms = <30>;
+		   timeout-ms = <50>;
 		   key-positions = <32 10>;
 		   bindings = <&kp LC(W)>;
 		   slow-release;
 	   };
 
 	   combo_ctl_s {
-		   timeout-ms = <30>;
+		   timeout-ms = <50>;
 		   key-positions = <31 10>;
 		   bindings = <&kp LC(S)>;
 		   slow-release;
 	   };
 
 	   combo_mb1_r {
-		   timeout-ms = <30>;
+		   timeout-ms = <50>;
 		   key-positions = <28 29>;
 		   bindings = <&mkp LCLK>;
 		   slow-release;
 	   };
 
 	   combo_mb2_r {
-		   timeout-ms = <30>;
+		   timeout-ms = <50>;
 		   key-positions = <28 19>;
 		   bindings = <&mkp RCLK>;
 		   slow-release;
 	   };
 
 	   combo_mb3_r {
-		   timeout-ms = <30>;
+		   timeout-ms = <50>;
 		   key-positions = <19 29>;
 		   bindings = <&mkp MCLK>;
 		   slow-release;
@@ -295,6 +295,7 @@
 		&kp QMARK  &kp DQT &kp BKSP &kp BKSP   &kp BKSP    			&kp BKSP &kp BKSP &kp UNDER &kp SQT  &mt RSFT BSLH
 					&trans &trans &trans  				&kp SPC  &mo 2 
 		>;
+            trackball-bindings = <&tsl>;
 	};
 
 	tri_layer {
