@@ -11,8 +11,8 @@
 };
 
 &lt {
-  tapping-term-ms = <150>;
-  quick_tap_ms = <100>;
+  tapping-term-ms = <200>;
+  quick_tap_ms = <200>;
   flavor = "hold-preferred";
 };
 
@@ -238,7 +238,7 @@
 
 	   combo_ctl_s {
 		   timeout-ms = <50>;
-		   key-positions = <31 10>;
+		   key-positions = <32 20>;
 		   bindings = <&kp LC(S)>;
 		   slow-release;
 	   };
