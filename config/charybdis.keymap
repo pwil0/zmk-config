@@ -293,7 +293,7 @@
 		&kp GRAVE  &kp LBKT &kp RBKT  &kp DLLR  &kp TILDE    			&kp AMPS  &kp KMLT &kp LPRN &kp RPRN &kp DEL
 		&kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCT 			&kp CARET &kp AMPS  &kp STAR  &kp MINUS   &kp EQUAL
 		&kp QMARK  &kp DQT &kp BKSP &kp BKSP   &kp BKSP    			&kp BKSP &kp BKSP &kp UNDER &kp SQT  &mt RSFT BSLH
-					&trans &trans &trans  				&kp SPC  &mo 2 
+					&trans &trans &trans  				&kp SPC  &mo 5 
 		>;
             trackball-bindings = <&tsl>;
 	};
@@ -318,9 +318,9 @@
 	};
 	bt_layer {
 		bindings = <
-		&bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4        &trans &trans &trans &trans &trans
-		&bt BT_SEL 5 &bt BT_SEL 6 &bt BT_SEL 7 &bt BT_SEL 8 &bt BT_SEL 9        &trans &trans &trans &trans &trans
-		&bt BT_CLR  &bt BT_NXT &bt BT_PRV &out OUT_USB &out OUT_BLE        &trans &trans &trans &trans &trans
+		&bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4        &bt BT_SEL 4 &bt BT_SEL 3 &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0
+		&bt BT_SEL 5 &bt BT_SEL 6 &bt BT_SEL 7 &bt BT_SEL 8 &bt BT_SEL 9        &bt BT_SEL 9 &bt BT_SEL 8 &bt BT_SEL 7 &bt BT_SEL 6 &bt BT_SEL 5
+		&bt BT_CLR  &trans &reset &out OUT_USB &out OUT_BLE        &reset &trans &trans &trans &bt BT_CLR
 					&trans &bootloader &trans  				&bootloader &bootloader
 		>;
 	};
