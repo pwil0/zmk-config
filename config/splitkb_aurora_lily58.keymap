@@ -27,7 +27,7 @@
 &mt LSHFT CAPS &kp LALT &kp Z  &kp X    &kp C    &kp V    &kp K_MUTE &kp RBKT  &kp B   &kp N         &kp M     &kp COMMA &kp DOT  &kp RSHFT
                                &tog 1   &kp LGUI &kp LCTL &lt 2 BSPC &kp SPACE &kp RET &kp LG(LS(S)) &trans >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp DOWN UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN>;
         };
 
         lower_layer {
@@ -45,7 +45,7 @@
                                               &trans            &trans       &trans    &trans   &trans    &trans    &trans    &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp K_SCROLL_DOWN K_SCROLL_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN>;
         };
 
         raise_layer {
@@ -63,7 +63,7 @@
                              &trans   &trans    &trans    &trans   &trans    &trans      &trans    &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp K_SCROLL_DOWN K_SCROLL_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN>;
         };
     };
 };
