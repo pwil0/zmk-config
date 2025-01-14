@@ -7,10 +7,12 @@ It's a cool layout for qwerty users.
 Proper finger placement in row staggered keyboards is uncomfortable for me (and probably for you too) so I did a couple of small changes to the layout when moving to a column staggered layout.
 
 Here's my finger placement for the alphas in a standard qwerty keyboard:
+
 ![Pasted image 20250114164618](https://github.com/user-attachments/assets/ea25e4d1-2519-4495-9b4c-d96df2c53e77)
 
 
 This is how it translates to my column staggered boards:
+
 ![Pasted image 20250114164948](https://github.com/user-attachments/assets/16f2b5ee-d75a-43b1-8a5e-36ddf47f3b8e)
 
 The differences are the M key is now pressed with the middle finger instead of the index finger and the slash is moved all the way to the left pinky
