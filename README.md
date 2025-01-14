@@ -68,6 +68,8 @@ The key that enables this layer is missing in the 34key keyboards like the ferri
 ### Combos
 The Esc key is nowhere to be found in any of the layers. Being a vim user I wanted it to be as easy to access as possible, so I put it in a combo of D and F.
 
+Whenever left thumb or right thumb is mentioned in the context of combos it means the Tab key or the Bksp key respectively.
+
 Other useful combos are:
 - F + V = Enter: to be able to use enter with the left hand
 - A + / = Bksp: to be able to use Bksp with the left hand
