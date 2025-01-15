@@ -88,6 +88,7 @@ I never tried standard homerow mods and I don't feel like I need to because my c
 - J + right thumb = Alt gr
 - K + right thumb = right GUI
 - L + right thumb = right CTRL
+
 Also any combination of these is also a valid combo (S + F + left thumb = CTRL + Alt)
 
 However, some combinations of modifier + alpha are unconfortable to press because they use the same key twice like CTRL + S. To solve this I have another way of pressing the modifiers that guarantees no overlap with the thumb combo.
