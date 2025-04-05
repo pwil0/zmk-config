@@ -1,0 +1,8 @@
+file_format: "1"
+id: flkb
+name: flkb
+type: shield
+url: https://github.com/fieoner/flkb
+requires: [pro_micro]
+features:
+  - keys

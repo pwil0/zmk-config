@@ -1,0 +1,60 @@
+/{
+	macros {
+        //keybinding is <&fatmom>
+        fatmom: fatmom {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp T>
+                , <&macro_press &kp LSHFT> 
+                , <&macro_tap &kp Y>
+                , <&macro_release &kp LSHFT>
+                , <&macro_tap &kp O &kp U &kp R &kp SPACE &kp M &kp O &kp M &kp SPACE &kp I &kp S &kp SPACE &kp F &kp A &kp T &kp RET>
+                ;
+            };
+        //keybinding is <&brothers>
+        brothers: brothers {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp T>
+                , <&macro_press &kp LSHFT> 
+                , <&macro_tap &kp Y>
+                , <&macro_release &kp LSHFT>
+                , <&macro_tap &kp O &kp U &kp R &kp SPACE &kp P &kp A &kp R &kp E &kp N &kp T &kp S &kp SPACE &kp A &kp R &kp E &kp SPACE &kp B &kp R &kp O &kp T &kp H &kp E &kp R &kp S &kp RET>
+                ;
+            };
+        //keybinding is <&freelo>
+        freelo: freelo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp T>
+                , <&macro_press &kp LSHFT> 
+                , <&macro_tap &kp T>
+                , <&macro_release &kp LSHFT>
+                , <&macro_tap &kp H &kp A &kp N &kp K &kp S &kp SPACE &kp F &kp O &kp R &kp SPACE &kp T &kp H &kp E &kp SPACE &kp F &kp R &kp E &kp E &kp SPACE &kp E &kp L &kp O &kp EXCL &kp RET>
+                ;
+            };
+        //keybinding is <&cry>
+        cry: cry {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp T>
+                , <&macro_press &kp LSHFT> 
+                , <&macro_tap &kp C>
+                , <&macro_release &kp LSHFT>
+                , <&macro_tap &kp R &kp Y &kp SPACE &kp H &kp A &kp R &kp D &kp E &kp R &kp RET>
+                ;
+            };
+        //keybinding is <&oderwas>
+        oderwas: oderwas {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp T &kp O &kp D &kp E &kp R &kp SPACE &kp W &kp A &kp S &kp RET>
+                ;
+            };
+	};
+};

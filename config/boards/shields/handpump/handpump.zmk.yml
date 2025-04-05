@@ -1,0 +1,8 @@
+file_format: "1"
+id: handpump
+name: handpump
+type: shield
+url: https://github.com/fieoner/handpump
+requires: [pro_micro]
+features:
+  - keys

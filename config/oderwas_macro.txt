@@ -1,0 +1,1 @@
+        //keybinding is <&oderwas>        oderwas: oderwas {            compatible = "zmk,behavior-macro";            #binding-cells = <0>;            bindings                = <&macro_tap &kp T &kp O &kp D &kp E &kp R &kp SPACE &kp W &kp A &kp S>                ;            };
