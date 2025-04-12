@@ -14,7 +14,6 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: splitkb_aurora_lily58_left
+    shield: cradio_left
   - board: nice_nano_v2
-    shield: splitkb_aurora_lily58_right
-
+    shield: cradio_right
